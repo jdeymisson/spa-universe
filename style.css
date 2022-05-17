@@ -91,6 +91,8 @@ h1 {
   line-height: 125%;
 
   color: var(--fc-primary-color);
+
+  animation: show .5s linear .1s forwards;
 }
 
 p {
@@ -102,6 +104,8 @@ p {
   max-width: 64.8rem;
 
   margin-left: 10.2rem;
+
+  animation: showright .5s linear .1s forwards;
 }
 
 header {
@@ -113,6 +117,8 @@ header {
   gap: 3.2rem;
 
   margin-left: 7.2rem;
+
+  animation: show .5s linear .1s forwards;
 }
 
 header nav ul {
@@ -139,10 +145,37 @@ button {
   position: absolute;
   left: 0;
   right: 0;
+
+  animation: show .5s linear .1s forwards;
 }
 
 button:hover {
   background: var(--fc-hover);
   color: #222;
 
+}
+
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+
+@keyframes showright {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
