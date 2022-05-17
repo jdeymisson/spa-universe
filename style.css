@@ -37,6 +37,11 @@ body.universe {
   background-position: center;
 }
 
+body.universe h1, body.exploration h1 {
+  margin: 7.3rem 0 1.6rem 10.2rem;
+  margin-left: 10.2rem;
+}
+
 body.exploration {
   background: url('/images/mountains-universe-3.png');
   background-size: cover;
@@ -47,6 +52,8 @@ body.notfound{
   background: url('/images/404.png');
   background-size: cover;
   background-position: center;
+
+  text-align: center;
 }
 
 a {
@@ -68,13 +75,15 @@ a[href='/404'] {
 
 a:hover {
   color: var(--fc-hover);
+  font-weight: bold;
+
+  font-size: 1.975rem;
 }
 
 a.active {
   color: var(--fc-hover);
   font-weight: bold;
 }
-
 
 h1 {
   font-weight: 700;
@@ -85,11 +94,14 @@ h1 {
 }
 
 p {
-  
   font-size: 1.8rem;
   line-height: 160%;
 
   color: var(--fc-primary-color);
+
+  max-width: 64.8rem;
+
+  margin-left: 10.2rem;
 }
 
 header {
