@@ -16,12 +16,19 @@
 
 body {
   min-height: 100vh;
+  width: 100%;
 }
 
 body.home {
   background: url('/images/mountains-universe-1.png');
   background-size: cover;
   background-position: center;
+}
+
+body.home h1 {
+  text-align: center;
+  
+  margin: 13.1rem 0 2.4rem;
 }
 
 body.universe {
@@ -99,4 +106,31 @@ header {
 header nav ul {
   display: flex;
   gap: 3.2rem;
+
+  list-style: none;
+}
+
+button {
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--fc-hover);
+  padding: 1.2rem 3.2rem;
+
+  background: transparent;
+
+  border: 2px solid var(--fc-hover);
+  border-radius: 5px;
+
+  transition: all .2s linear;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+button:hover {
+  background: var(--fc-hover);
+  color: #222;
+
 }
